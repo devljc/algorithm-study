@@ -23,6 +23,7 @@ public class Programmers42584 {
 
     //1. 가격이 떨어진 인덱스를 먼저 구해서 해당 위치 초기화
     //2. 나머지 부분은 지속적으로 유지 된것임으로 총길이 - 인덱스 - 1
+    //스택 선형 알고리즘: 특히 이전보다 큰 값/작은 값을 찾거나 계속 유지되는 상태를 추적할 때 사용
     public int[] solution2(int[] prices) {
         int[] answer = new int[prices.length];
         Deque<Integer> stack = new ArrayDeque<>();
